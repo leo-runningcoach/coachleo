@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://coachleo.ai/logo.png" alt="Coach Leo" width="120" />
+  <img src="https://coachleo.ai/icon.png" alt="Coach Leo" width="120" />
 </p>
 
 <h1 align="center">Coach Leo — AI Running Coach</h1>
