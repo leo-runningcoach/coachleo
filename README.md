@@ -74,42 +74,11 @@ Cycling, swimming, hiking, skiing — each session gets a specific role: recover
 
 ## Available everywhere
 
-|
- Channel 
-|
- Description 
-|
-|
----------
-|
--------------
-|
-|
-**
-Web app
-**
-|
- Full chat interface with training dashboard, character visualization, race countdown, and performance metrics at 
-[
-coachleo.ai
-](
-https://coachleo.ai
-)
-|
-|
-**
-Telegram
-**
-|
- Message Leo directly for quick coaching on the go. Same memory, same tools, same coach. 
-|
-|
-**
-ChatGPT, Claude, Mistral
-**
-|
- Connect Leo as an MCP server. Your favorite AI assistant becomes your running coach with full access to your data. 
-|
+| Channel | Description |
+|---------|-------------|
+| **Web app** | Full chat interface with training dashboard, character visualization, race countdown, and performance metrics at [coachleo.ai](https://coachleo.ai) |
+| **Telegram** | Message Leo directly for quick coaching on the go. Same memory, same tools, same coach. |
+| **ChatGPT, Claude, Mistral** | Connect Leo as an MCP server. Your favorite AI assistant becomes your running coach with full access to your data. |
 
 ---
 
@@ -158,53 +127,71 @@ Coach Leo also works as a **hosted remote MCP server** — no installation requi
     }
   }
 }
+```
 
-12 coaching tools
-Tool	Description
-get_coaching_briefing	Complete coaching context: profile, recent activities, training load, alerts, readiness, character status.
-manage_athlete	Runner profile and running character management. Body metrics, preferences, character recalculation.
-manage_activities	Query and annotate Strava-synced activities. Filter by date, sport, impact. Record feedback.
-manage_training	Create and manage personalized training plans. Modify sessions, track adherence.
-track_body_signals	Log body observations, record physical setbacks, daily readiness check-ins.
-manage_shoes	Track shoe collection, wear inspections across 6 zones, mileage stats, and retirement.
-manage_races	Full race lifecycle: discovery via web search, registration, preparation, results, post-race analysis.
-search_knowledge	Hybrid semantic + full-text search across 65+ peer-reviewed papers.
-coaching_memory	Persistent memory across sessions. Logs decisions, prevents contradictory advice.
-estimate_vo2max	VO2max estimation using 3 scientific methods with cross-validation.
-calculate_training_zones	Pace and HR zones (Z1-Z5) from race performance or physiological data.
-analyze_gpx	GPX file analysis: elevation profiles, terrain segmentation, diversity scoring.
-11 coaching workflows
+### 12 coaching tools
+
+| Tool | Description |
+|------|-------------|
+| `get_coaching_briefing` | Complete coaching context: profile, recent activities, training load, alerts, readiness, character status. |
+| `manage_athlete` | Runner profile and running character management. Body metrics, preferences, character recalculation. |
+| `manage_activities` | Query and annotate Strava-synced activities. Filter by date, sport, impact. Record feedback. |
+| `manage_training` | Create and manage personalized training plans. Modify sessions, track adherence. |
+| `track_body_signals` | Log body observations, record physical setbacks, daily readiness check-ins. |
+| `manage_shoes` | Track shoe collection, wear inspections across 6 zones, mileage stats, and retirement. |
+| `manage_races` | Full race lifecycle: discovery via web search, registration, preparation, results, post-race analysis. |
+| `search_knowledge` | Hybrid semantic + full-text search across 65+ peer-reviewed papers. |
+| `coaching_memory` | Persistent memory across sessions. Logs decisions, prevents contradictory advice. |
+| `estimate_vo2max` | VO2max estimation using 3 scientific methods with cross-validation. |
+| `calculate_training_zones` | Pace and HR zones (Z1-Z5) from race performance or physiological data. |
+| `analyze_gpx` | GPX file analysis: elevation profiles, terrain segmentation, diversity scoring. |
+
+### 11 coaching workflows
+
 Predefined workflows that chain tools together for complex scenarios:
 
-Onboarding — Strava-first setup: Leo deduces your patterns before asking anything
-Post-activity analysis — Automated debrief with shoe deduction and sensation logging
-Body signal analysis — Injury risk assessment backed by knowledge base citations
-Overtraining monitoring — Multi-indicator load analysis with graduated alerts
-Weekly review — Training summary with character recalculation and plan adjustments
-Adaptive plan creation — Plans from real paces with constraint validation
-Race planning — Web search for race data, GPX analysis, taper protocol
-Deep research — Knowledge base enrichment from web search
-GPX pattern analysis — Terrain and elevation profiling for race preparation
-Shoe wear assessment — 6-zone inspection with biomechanical pattern detection
-Character reveal — Running character assignment ceremony
-Authentication
+- **Onboarding** — Strava-first setup: Leo deduces your patterns before asking anything
+- **Post-activity analysis** — Automated debrief with shoe deduction and sensation logging
+- **Body signal analysis** — Injury risk assessment backed by knowledge base citations
+- **Overtraining monitoring** — Multi-indicator load analysis with graduated alerts
+- **Weekly review** — Training summary with character recalculation and plan adjustments
+- **Adaptive plan creation** — Plans from real paces with constraint validation
+- **Race planning** — Web search for race data, GPX analysis, taper protocol
+- **Deep research** — Knowledge base enrichment from web search
+- **GPX pattern analysis** — Terrain and elevation profiling for race preparation
+- **Shoe wear assessment** — 6-zone inspection with biomechanical pattern detection
+- **Character reveal** — Running character assignment ceremony
+
+### Authentication
+
 Full OAuth 2.1 implementation:
 
-Discovery: /.well-known/oauth-authorization-server
-Dynamic Client Registration (DCR)
-PKCE with S256
-Token refresh and revocation
-Privacy & data
-Hosted in Germany (Hetzner, EU)
-HTTPS/TLS encryption
-Strava data is read-only
-Strict user data isolation
-GDPR compliant — export and deletion on request
-No data used for AI model training
-Links
-Website
-About
-MCP Documentation
-Smithery
-Contact: contact@coachleo.ai
+- Discovery: `/.well-known/oauth-authorization-server`
+- Dynamic Client Registration (DCR)
+- PKCE with S256
+- Token refresh and revocation
+
+---
+
+## Privacy & data
+
+- Hosted in **Finland** (Hetzner, EU)
+- HTTPS/TLS encryption
+- Strava data is **read-only**
+- Strict user data isolation
+- GDPR compliant — export and deletion on request
+- No data used for AI model training
+
+---
+
+## Links
+
+- [Website](https://coachleo.ai)
+- [About](https://coachleo.ai/en/about)
+- [MCP Documentation](https://coachleo.ai/en/docs)
+- [Smithery](https://smithery.ai/servers/coachleo/running-coach)
+- Contact: contact@coachleo.ai
+
+---
+
 <p align="center">Made in the Alps.</p>
