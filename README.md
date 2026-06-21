@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>An AI running coach that connects to your Strava data, builds plans from your real history, and adapts daily based on how you actually feel.</strong><br/>
-  Available on the web, on Telegram, and as an MCP server for ChatGPT, Claude, and Mistral (native iOS and Android apps coming soon). Every recommendation draws from 200+ peer-reviewed sports science papers.
+  Available on iOS, Android, on the web, on Telegram, and as an MCP server for ChatGPT, Claude, and Mistral. Every recommendation draws from 200+ peer-reviewed sports science papers.
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ Leo is not a chatbot that generates generic plans from what you type. He deduces
 
 ### How to get started
 
-1. Create an account at [coachleo.ai](https://coachleo.ai) — email, Google, or Sign in with Apple (7-day free trial)
+1. Create an account at [coachleo.ai](https://coachleo.ai) or download the application — email, Google, or Sign in with Apple
 2. Connect your Strava account (read-only)
 3. Start chatting — Leo already knows your training
 
@@ -99,7 +99,7 @@ Coach Leo is built to reduce single-source dependence. Strava is the primary con
 | **Web app** | Full chat interface with training dashboard, character visualization, race countdown, and performance metrics at [coachleo.ai](https://coachleo.ai) |
 | **Telegram** | Message Leo directly for quick coaching on the go. Same memory, same tools, same coach. |
 | **ChatGPT, Claude, Mistral** | Connect Leo as an MCP server. Your favorite AI assistant becomes your running coach with full access to your data. |
-| **iOS & Android** | Native apps coming soon — device health import and push notifications. |
+| **iOS & Android** | Native apps — device health import and push notifications. |
 
 ---
 
@@ -124,7 +124,6 @@ Coach Leo syncs **all your activities** — running is the primary coaching focu
 ## Pricing
 
 - **Free plan** — start with no card: a personalized starter plan, your running character, and community access.
-- **7-day free trial** of the full coaching experience.
 - **Founding member**: $9.99/month (limited spots, locked for life — regular price is $12.99/month)
 - **Quarterly**: $26.99 every 3 months
 - **Annual**: $79.99/year (≈ $6.67/month)
@@ -217,6 +216,8 @@ Full OAuth 2.1 implementation:
 
 ## Links
 
+- [iOS]([https://coachleo.ai](https://apps.apple.com/fr/app/coach-leo/id6776711556))
+- [Android]([https://coachleo.ai](https://play.google.com/store/apps/details?id=ai.coachleo.app&pcampaignid=web_share))
 - [Website](https://coachleo.ai)
 - [About](https://coachleo.ai/en/about)
 - [Lab — free running science Q&A](https://coachleo.ai/lab)
